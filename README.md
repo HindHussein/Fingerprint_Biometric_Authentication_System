@@ -5,13 +5,13 @@ The fingerprint biometric authentication system was done using the python langua
 
 # SIFT Keypoints
 <br>
-<img width="300" alt="Edit Table UI Design" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/83156256-a071-4ffe-90ea-4f1db39639fa">
+<img width="300" alt="SIFT Keypoints" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/83156256-a071-4ffe-90ea-4f1db39639fa">
 <br>
 The library cv2 used in order to provide functions for computer vision tasks, such as SIFT and FLANN, were imported. Cv2 allows loading, displaying, manipulating, and processing images, and detection and extraction of certain features within said images. The majority of image matching was done within a loop for threshold. Each threshold value (0.1 until 0.9) resulted in a different table of FNMR and FMR. The calculations of FNMR and FMR were done by loading the seven altered and seven real pictures and looping through the real pictures to determine if there was a match. The images were converted to grayscale for the main purpose of representing the intensity information since SIFT operates on intensity values. The SIFT algorithm will then detect each image’s key points. The images are matched using the FLANN matcher for the quickest way to find similarities between images. 
 
 # FLANN Compare Keypoints
 <br>
-<img width="300" alt="Edit Table UI Design" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/76a40138-2008-4e66-bf85-d99c9441f550">
+<img width="300" alt="FLANN Compare Keypoints" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/76a40138-2008-4e66-bf85-d99c9441f550">
 <br>
 
 The good matches are filtered and dependent on the best match will be printed to inform the user of the real and altered image with the greater similarity. The match between the user’s real and altered image would then be stored in the FNMR, while the match between the user’s real image and another’s altered image would be stored in the FMR, as shown in Table 1 with a threshold equal to 0.9. The mathematical equations to determine the rates of each FNMR and FMR point were done for each threshold, and then plotted on the graph. The graph was done by importing a library matplot that draws the ROC curve based on the rate of the FNMR and FMR over an increasing threshold. 
@@ -19,7 +19,7 @@ The good matches are filtered and dependent on the best match will be printed to
 
 # FNMR/FMR Rate over an Increasing Threshold
 <br>
-<img width="300" alt="Edit Table UI Design" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/1c451d75-0c79-4996-8cf9-b9c1cf4ee1a5">
+<img width="300" alt="FNMR/FMR Rate over an Increasing Threshold" src="https://github.com/HindSuleimanHussein/Fingerprint_Biometric_Authentication_System/assets/118082388/1c451d75-0c79-4996-8cf9-b9c1cf4ee1a5">
 <br>
 The graph shows how the FNMR increases and FMR decreases as the threshold decreases due to the system becoming more sensitive, meaning malicious users would not be able to enter the system. However, an increased FNMR would lead to many legitimate users being rejected from the system. The Error Enrollment Rate shows how the FNMR and FMR meet at a threshold of 0.2 before FNMR increases and FMR decreases. 
 
