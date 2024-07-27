@@ -347,4 +347,4 @@ FNMR: 7/7
 FMR: 0/42
 
 
-:In collaboration with Amr Monjed Barghouthi:
+<strong> In Collaboration with <a href="https://github.com/Amr-Barghothy"> Amr Monjed Barghouthi </a> </strong>
